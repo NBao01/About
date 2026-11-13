@@ -1,0 +1,54 @@
+﻿/* window-lifecycle-demo */
+/* A single window over the hidden puzzle, without a desktop shell. */
+.window{position:relative;z-index:2;height:calc(100dvh - 40px)}.window.expanded{height:100dvh}
+.window[hidden],.closed-state[hidden]{display:none!important}
+.window-controls{display:flex;align-items:center;gap:2px;flex:none}
+.titlebar .expand,.title-control{appearance:none;position:relative;display:block;flex:none;width:18px;height:16px;min-width:18px;margin:0;padding:0;border:0;border-radius:0;background:#c0c0c0;color:#000;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;cursor:default;line-height:1}
+.title-control:active{box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080}.title-control:active .control-glyph{transform:translate(1px,1px)}
+.title-control:focus-visible{outline:1px dotted #000;outline-offset:-4px}.close-window{margin-left:2px}
+.minimize-glyph{position:absolute;left:4px;top:10px;width:7px;height:2px;background:#000}.close-glyph{position:absolute;left:4px;top:3px;width:10px;height:9px;display:block}
+.task-button{display:flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:0;padding:3px 9px;color:#000;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;font:13px/1.3 var(--font-window,Tahoma,sans-serif);cursor:default}
+.task-button:focus-visible{outline:1px dotted #000;outline-offset:-4px}.task-button:active{box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080}
+.closed-state{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(340px,calc(100vw - 40px));text-align:center;color:#fff;font:14px/1.6 var(--font-window,Tahoma,sans-serif)}
+.closed-state p{margin:0 0 12px}.reopen-link{border:0;background:none;padding:4px;color:#fff;text-decoration:underline;text-underline-offset:4px;font:inherit;cursor:pointer}.reopen-link:focus-visible{outline:1px dotted #fff;outline-offset:3px}
+@media(max-width:600px){.window{height:calc(100dvh - 14px)}.window.expanded{height:100dvh}}
+@media print{.closed-state{display:none}.window,.window.expanded{height:auto}.window-controls{display:none}}
+
+/* minimized-easter-egg */
+.desktop-toy[hidden]{display:none!important}
+.desktop-toy{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:330px;max-width:calc(100vw - 28px);max-height:calc(100dvh - 40px);overflow:auto;background:#c0c0c0;border:2px solid;border-color:#fff #222 #222 #fff;padding:3px;box-shadow:1px 1px #000;color:#000;font:13px/1.5 var(--font-window,Tahoma,sans-serif)}
+.desktop-toy .titlebar{font-size:13px;padding:4px 6px;min-height:25px}.toy-content{padding:13px}.toy-content p{font:inherit;margin:0 0 12px}
+.signal-board{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;background:#a0a0a0;padding:8px;border:2px solid;border-color:#777 #fff #fff #777}
+.signal-pixel{aspect-ratio:1;min-height:36px;padding:0;background:#344c46;border:2px solid;border-color:#788b80 #12281e #12281e #788b80;cursor:pointer}
+.signal-pixel[aria-pressed="true"]{background:#61ad65;border-color:#b4e7a8 #315e32 #315e32 #b4e7a8;box-shadow:inset 0 0 0 4px #84c77a}
+.signal-pixel:focus-visible{outline:2px dotted #fff;outline-offset:-6px}.signal-pixel:active{border-color:#12281e #788b80 #788b80 #12281e}
+.toy-status{display:flex;justify-content:space-between;gap:12px;margin:10px 0;font:13px/1.4 var(--font-window,Tahoma,sans-serif)}.toy-actions{display:flex;gap:7px;flex-wrap:wrap}.toy-actions button{flex:1;min-height:28px;white-space:nowrap}
+.desktop-toy .toy-result{min-height:20px;margin:9px 0 0;color:#184a21}
+@media(max-height:540px){.desktop-toy{top:12px;transform:translateX(-50%);max-height:calc(100dvh - 24px)}.signal-pixel{min-height:28px;aspect-ratio:auto;height:32px}.toy-content{padding:9px}.toy-content p{margin-bottom:8px}}
+@media print{.desktop-toy{display:none}}
+
+/* minimized-window-presence */
+/* The minimized window keeps its own small title bar; this is not a taskbar. */
+.minimized-titlebar[hidden]{display:none!important}
+.minimized-titlebar{position:fixed;left:12px;bottom:12px;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:18px;width:245px;max-width:calc(100vw - 24px);min-height:30px;margin:0;padding:5px 7px;color:white;background:#000080;border:2px solid;border-color:#fff #222 #222 #fff;box-shadow:inset 0 0 0 1px #c0c0c0;font:700 13px/1.3 var(--font-window,Tahoma,sans-serif);cursor:default;text-align:left}
+.minimized-titlebar:focus-visible{outline:1px dotted #fff;outline-offset:-6px}
+.mini-restore-frame{position:relative;display:block;flex:none;width:18px;height:16px;background:#c0c0c0;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+.mini-restore-frame:before,.mini-restore-frame:after{content:'';position:absolute;width:8px;height:7px;background:#c0c0c0;border:1px solid #000;border-top-width:2px;box-sizing:border-box}
+.mini-restore-frame:before{left:6px;top:3px}.mini-restore-frame:after{left:4px;top:5px}
+.desktop-toy{max-height:calc(100dvh - 90px)}
+@media(max-height:540px){.desktop-toy{max-height:calc(100dvh - 66px)}}
+@media print{.minimized-titlebar{display:none}}
+
+/* Shared production shell. Only the document scrolls; the Easter egg replaces it when minimized. */
+html,body{height:100%;overflow:hidden}
+.window{display:flex;flex-direction:column;width:calc(100% - 40px);max-width:900px;height:calc(100dvh - 40px);min-width:0;min-height:0;margin:20px auto;overflow:hidden}
+.titlebar,nav,.statusbar{flex-shrink:0}
+.document,.document.vertical-reader{flex:1 1 0;min-width:0;min-height:0;height:auto;max-height:none;overflow:auto;overscroll-behavior:contain}
+.window.expanded{width:100%;max-width:none;height:100dvh;margin:0}
+.window[hidden],.desktop-toy[hidden],.closed-state[hidden],.minimized-titlebar[hidden]{display:none!important}
+.skip-link{position:fixed;left:12px;top:-80px;z-index:10;padding:8px 12px;background:#fff;color:#000080}
+.skip-link:focus{top:8px}
+@media(max-width:600px){.window{width:calc(100% - 14px);height:calc(100dvh - 14px);margin:7px auto}.window.expanded{width:100%;height:100dvh;margin:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{html,body{height:auto;overflow:visible}.window,.window.expanded{display:block;width:auto;max-width:none;height:auto;margin:0;border:0;box-shadow:none}.document,.document.vertical-reader{height:auto;overflow:visible}.skip-link,.window-controls,.desktop-toy,.minimized-titlebar,.closed-state{display:none!important}}
+

@@ -1,0 +1,303 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="包楠，北京航空航天大學博士研究生，研究多模態視覺感知與可控影像生成。">
+<title>包楠 — 個人主頁</title>
+<link rel="icon" href="../fav.ico">
+<link rel="stylesheet" href="../assets/vertical.css">
+<link rel="stylesheet" href="../assets/window.css">
+<script src="../assets/site.js" defer>
+</script>
+<link rel="canonical" href="https://about.nbao.tw/zh/">
+<link rel="alternate" hreflang="en" href="https://about.nbao.tw/">
+<link rel="alternate" hreflang="zh-Hant" href="https://about.nbao.tw/zh/">
+<link rel="alternate" hreflang="x-default" href="https://about.nbao.tw/">
+</head>
+<body id="top" class="is-vertical">
+<a class="skip-link" href="#about">跳至主頁內容</a>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-defs" aria-hidden="true">
+<defs>
+<symbol id="i-home" viewBox="0 0 24 24">
+<path fill="#222" d="M2 10h2V8h2V6h2V4h2V2h4v2h2v2h2v2h2v2h2v3h-3v9H5v-9H2z"/>
+<path fill="#98483b" d="M4 10h2V8h2V6h2V4h4v2h2v2h2v2h2v1H4z"/>
+<path fill="#e8dbb5" d="M7 12h10v8H7z"/>
+<path fill="#476b89" d="M9 14h3v6H9z"/>
+<path fill="#fff" d="M14 14h2v3h-2z"/>
+</symbol>
+<symbol id="i-paper" viewBox="0 0 24 24">
+<path fill="#222" d="M5 1h11l5 5v17H5z"/>
+<path fill="#fffde8" d="M6 2h9v5h5v15H6z"/>
+<path fill="#a8a8a8" d="M16 3v3h3z"/>
+<path fill="#173d82" d="M8 9h10v2H8zm0 4h10v1H8zm0 3h10v1H8zm0 3h7v1H8z"/>
+</symbol>
+<symbol id="i-book" viewBox="0 0 24 24">
+<path fill="#222" d="M2 3h8l2 2 2-2h8v17h-8l-2 2-2-2H2z"/>
+<path fill="#fffde8" d="M3 4h7l1 1v14l-1-1H3zm11 0h7v14h-7l-1 1V5z"/>
+<path fill="#315d91" d="M4 7h5v1H4zm0 3h5v1H4zm0 3h5v1H4zm11-6h5v1h-5zm0 3h5v1h-5zm0 3h5v1h-5z"/>
+</symbol>
+<symbol id="i-folder" viewBox="0 0 24 24">
+<path fill="#222" d="M1 5h9l3 3h10v13H1z"/>
+<path fill="#e3b64b" d="M2 6h7l3 3h10v11H2z"/>
+<path fill="#fff0a0" d="M2 10h20v2H2z"/>
+<path fill="#a27323" d="M2 19h20v1H2z"/>
+</symbol>
+<symbol id="i-mail" viewBox="0 0 24 24">
+<path fill="#222" d="M1 5h22v15H1z"/>
+<path fill="#fffde8" d="M2 6h20v13H2z"/>
+<path fill="none" stroke="#666" d="m2 6 10 8L22 6M2 19l7-7m13 7-7-7"/>
+<path fill="#c54b36" d="M18 7h3v4h-3z"/>
+</symbol>
+</defs>
+</svg>
+<div class="closed-state" hidden>
+<p>瀏覽器保留了這個分頁。</p>
+<button class="reopen-link" type="button">重新開啟主頁</button>
+</div>
+<section class="desktop-toy" aria-labelledby="toy-title" hidden>
+<div class="titlebar">
+<span id="toy-title">休息一下 — 訊號復原</span>
+</div>
+<div class="toy-content">
+<p>讓所有格子亮起。點擊格子會翻轉自身及上下左右相鄰的格子。</p>
+<div class="signal-board" role="group" aria-label="訊號復原遊戲">
+</div>
+<div class="toy-status">
+<span class="toy-moves">步數：0</span>
+<span>4 × 4</span>
+</div>
+<div class="toy-actions">
+<button class="task-button toy-reset" type="button">重設</button>
+<button class="task-button toy-new" type="button">換一題</button>
+<button class="task-button toy-return" type="button">還原視窗</button>
+</div>
+<p class="toy-result" role="status" aria-live="polite">
+</p>
+</div>
+</section>
+<div class="window" id="window">
+<div class="titlebar">
+<svg class="icon" aria-hidden="true">
+<use href="#i-home">
+</use>
+</svg>
+<span class="window-title">包楠 — 個人主頁</span>
+<div class="window-controls">
+<button class="title-control minimize-window" type="button" title="最小化" aria-label="最小化主頁視窗">
+<span class="control-glyph minimize-glyph" aria-hidden="true">
+</span>
+</button>
+<button class="expand" type="button" aria-label="Maximize window" title="Maximize window" aria-pressed="false">
+<span class="maximize-icon" aria-hidden="true">
+</span>
+</button>
+<button class="title-control close-window" type="button" title="關閉分頁" aria-label="關閉目前瀏覽器分頁">
+<svg class="control-glyph close-glyph" viewBox="0 0 10 9" aria-hidden="true" shape-rendering="crispEdges">
+<path fill="black" d="M0 0h2v1h1v1h1v1h2V2h1V1h1V0h2v1H9v1H8v1H7v2h1v1h1v1h1v2H8V8H7V7H6V6H4v1H3v1H2v1H0V7h1V6h1V5h1V3H2V2H1V1H0z"/>
+</svg>
+</button>
+</div>
+</div>
+<nav aria-label="頁面目錄">
+<a href="#about">
+<svg class="icon" aria-hidden="true">
+<use href="#i-home">
+</use>
+</svg>關於我</a>
+<a href="#publications">
+<svg class="icon" aria-hidden="true">
+<use href="#i-paper">
+</use>
+</svg>研究成果</a>
+<a href="#education">
+<svg class="icon" aria-hidden="true">
+<use href="#i-book">
+</use>
+</svg>教育經歷</a>
+<a href="#experience">
+<svg class="icon" aria-hidden="true">
+<use href="#i-folder">
+</use>
+</svg>實習經歷</a>
+</nav>
+<div class="document vertical-reader" tabindex="0" aria-label="豎排內容，由右向左橫向捲動">
+<div class="scrollbook">
+<header id="about" class="leaf about-leaf" aria-label="關於包楠">
+<div class="v-profile">
+<div class="photo-column">
+<img class="portrait" src="../images/portrait.jpg" alt="包楠的照片" width="125" height="157">
+<p lang="en">Nan Bao</p>
+<div class="vertical-contact">
+<a href="#contact-email" data-email-user="nbao" data-email-domain="buaa.edu.cn">電子郵件</a>
+<a href="https://scholar.google.com/citations?user=44MDFE8AAAAJ&amp;hl=en">學術檔案</a>
+</div>
+</div>
+<div class="v-identity">
+<h1>包楠</h1>
+<span class="mongolian" lang="mn-Mong">ᠪᠣᠣ ᠨᠠᠨ</span>
+</div>
+<div class="v-affiliation">
+<p>計算機科學與技術專業・博士研究生</p>
+<p>計算機學院</p>
+<p>虛擬現實技術與系統國家重點實驗室</p>
+<p>
+<b>北京航空航天大學</b>
+</p>
+</div>
+</div>
+<div class="v-intro">
+<p>我是北京航空航天大學的博士研究生，研究方向包括<b>多模態視覺感知</b>與<b>可控影像生成</b>。近期工作聚焦於困難感知條件下的事件與ＲＧＢ語義分割，以及少樣本條件下的佈局引導影像生成。</p>
+</div>
+</header>
+<section id="publications" class="leaf research-leaf" aria-labelledby="pub-heading">
+<h2 id="pub-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-paper">
+</use>
+</svg>
+<span class="heading-text">研究成果</span>
+</h2>
+<div class="first-author-group" role="group" aria-labelledby="first-author-heading">
+<h3 class="research-group-title" id="first-author-heading">第一作者研究</h3>
+<div class="paper-shelf">
+<article class="paper-card">
+<p class="paper-number" aria-label="論文二">2.</p>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2605.31266">Envisioning Beyond the Few: Disentangled Semantics and Primitives for Few-Shot Atypical Layout-to-Image Generation</a>
+</h3>
+<p class="authors" lang="en">
+<b>Nan Bao</b>, Yifan Zhao, Wenzhuang Wang, Jia Li<br>
+<i>International Conference on Machine Learning (ICML), 2026.</i>
+</p>
+<p class="description">將語義身分與視覺基元解耦，在僅有少量樣本的條件下，根據指定佈局生成影像。</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2605.31266">論文</a> | <a href="https://github.com/iCVTEAM/DSP">程式碼</a> ]</p>
+</article>
+<article class="paper-card">
+<p class="paper-number" aria-label="論文一">1.</p>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2511.08269">Re-Coding for Uncertainties: Edge-Awareness Semantic Concordance for Resilient Event-RGB Segmentation</a>
+</h3>
+<p class="authors" lang="en">
+<b>Nan Bao</b>, Yifan Zhao, Lin Zhu, Jia Li<br>
+<i>Advances in Neural Information Processing Systems (NeurIPS), 2025.</i>
+</p>
+<p class="description">利用共享的邊緣線索對齊事件與ＲＧＢ特徵，提升困難感知條件下語義分割的穩健性。</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2511.08269">論文</a> | <a href="https://github.com/iCVTEAM/ESC">程式碼與資料集</a> ]</p>
+</article>
+</div>
+</div>
+<div class="collaborative-group" role="group" aria-labelledby="collaborative-heading">
+<h3 class="research-group-title" id="collaborative-heading">合作研究</h3>
+<div class="collaborative-shelf">
+<article class="paper-card collaboration-card">
+<p class="paper-number">2.</p>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2601.15475">Seeing through Light and Darkness: Sensor-Physics Grounded Deblurring HDR NeRF from Single-Exposure Images and Events</a>
+</h3>
+<p class="authors" lang="en">Yunshan Qi, Lin Zhu, <b>Nan Bao</b>, Yifan Zhao, Jia Li<br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</i>
+</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2601.15475">論文</a> | <a href="https://icvteam.github.io/See-NeRF.html">專案頁面</a> | <a href="https://github.com/iCVTEAM/See-NeRF">程式碼</a> ]</p>
+</article>
+<article class="paper-card collaboration-card">
+<p class="paper-number">1.</p>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2406.14360">Deblurring Neural Radiance Fields with Event-Driven Bundle Adjustment</a>
+</h3>
+<p class="authors" lang="en">Yunshan Qi, Lin Zhu, Yifan Zhao, <b>Nan Bao</b>, Jia Li<br>
+<i>ACM International Conference on Multimedia (ACM MM), 2024.</i>
+</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2406.14360">論文</a> | <a href="https://icvteam.github.io/EBAD-NeRF.html">專案頁面</a> | <a href="https://github.com/iCVTEAM/EBAD-NeRF">程式碼</a> ]</p>
+</article>
+</div>
+</div>
+</section>
+<section id="education" class="leaf history-leaf" aria-labelledby="edu-heading">
+<h2 id="edu-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-book">
+</use>
+</svg>
+<span class="heading-text">教育經歷</span>
+</h2>
+<div class="v-history">
+<article>
+<h3>北京航空航天大學</h3>
+<p>計算機科學與技術專業　博士研究生</p>
+<p>二〇二四年九月至今</p>
+</article>
+<article>
+<h3>北京航空航天大學</h3>
+<p>軟件工程專業　碩士研究生</p>
+<p>二〇二三年九月至二〇二四年八月</p>
+</article>
+<article>
+<h3>北京航空航天大學</h3>
+<p>計算機科學與技術專業　學士</p>
+<p>二〇一八年九月至二〇二二年六月</p>
+</article>
+</div>
+</section>
+<section id="experience" class="leaf experience-leaf" aria-labelledby="exp-heading">
+<h2 id="exp-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-folder">
+</use>
+</svg>
+<span class="heading-text">實習經歷</span>
+</h2>
+<div class="v-history">
+<article>
+<h3>教育部教育考試院</h3>
+<p>實習</p>
+<p>二〇二二年九月至二〇二三年八月</p>
+</article>
+<article>
+<h3>商湯科技</h3>
+<p>實習</p>
+<p>二〇二一年十二月至二〇二二年九月</p>
+</article>
+</div>
+</section>
+<footer class="leaf closing-leaf" aria-label="聯絡方式">
+<p class="return">
+<a href="#top">返回開頭</a>
+</p>
+<a class="closing-mail" href="#contact-email" data-email-user="nbao" data-email-domain="buaa.edu.cn">
+<svg class="icon" aria-hidden="true">
+<use href="#i-mail">
+</use>
+</svg>
+<span>寫信給包楠</span>
+</a>
+</footer>
+</div>
+</div>
+<div class="statusbar">
+<span class="copyright" id="contact-email">© 2026 Nan Bao</span>
+<div class="edition-control">
+<label for="edition-select">語言</label>
+<select id="edition-select" aria-label="切換語言">
+</select>
+<noscript>
+<p>
+<a href="../">English</a>
+</p>
+</noscript>
+</div>
+</div>
+</div>
+<button class="minimized-titlebar" type="button" aria-label="還原已最小化的主頁視窗" title="還原視窗" hidden>
+<span>包楠 — 已最小化</span>
+<span class="mini-restore-frame" aria-hidden="true">
+</span>
+</button>
+</body>
+</html>
+
+
+
+
+
+

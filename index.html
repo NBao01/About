@@ -1,0 +1,305 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nan Bao — computer vision research at Beihang University.">
+<title>Nan Bao — Personal Home Page</title>
+<link rel="icon" href="fav.ico">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/window.css">
+<script src="assets/site.js" defer>
+</script>
+<link rel="canonical" href="https://about.nbao.tw/">
+<link rel="alternate" hreflang="en" href="https://about.nbao.tw/">
+<link rel="alternate" hreflang="zh-Hant" href="https://about.nbao.tw/zh/">
+<link rel="alternate" hreflang="x-default" href="https://about.nbao.tw/">
+</head>
+<body id="top" class="is-horizontal">
+<a class="skip-link" href="#about">Skip to content</a>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-defs" aria-hidden="true">
+<defs>
+<symbol id="i-home" viewBox="0 0 24 24">
+<path fill="#222" d="M2 10h2V8h2V6h2V4h2V2h4v2h2v2h2v2h2v2h2v3h-3v9H5v-9H2z"/>
+<path fill="#98483b" d="M4 10h2V8h2V6h2V4h4v2h2v2h2v2h2v1H4z"/>
+<path fill="#e8dbb5" d="M7 12h10v8H7z"/>
+<path fill="#476b89" d="M9 14h3v6H9z"/>
+<path fill="#fff" d="M14 14h2v3h-2z"/>
+</symbol>
+<symbol id="i-paper" viewBox="0 0 24 24">
+<path fill="#222" d="M5 1h11l5 5v17H5z"/>
+<path fill="#fffde8" d="M6 2h9v5h5v15H6z"/>
+<path fill="#a8a8a8" d="M16 3v3h3z"/>
+<path fill="#173d82" d="M8 9h10v2H8zm0 4h10v1H8zm0 3h10v1H8zm0 3h7v1H8z"/>
+</symbol>
+<symbol id="i-book" viewBox="0 0 24 24">
+<path fill="#222" d="M2 3h8l2 2 2-2h8v17h-8l-2 2-2-2H2z"/>
+<path fill="#fffde8" d="M3 4h7l1 1v14l-1-1H3zm11 0h7v14h-7l-1 1V5z"/>
+<path fill="#315d91" d="M4 7h5v1H4zm0 3h5v1H4zm0 3h5v1H4zm11-6h5v1h-5zm0 3h5v1h-5zm0 3h5v1h-5z"/>
+</symbol>
+<symbol id="i-folder" viewBox="0 0 24 24">
+<path fill="#222" d="M1 5h9l3 3h10v13H1z"/>
+<path fill="#e3b64b" d="M2 6h7l3 3h10v11H2z"/>
+<path fill="#fff0a0" d="M2 10h20v2H2z"/>
+<path fill="#a27323" d="M2 19h20v1H2z"/>
+</symbol>
+<symbol id="i-mail" viewBox="0 0 24 24">
+<path fill="#222" d="M1 5h22v15H1z"/>
+<path fill="#fffde8" d="M2 6h20v13H2z"/>
+<path fill="none" stroke="#666" d="m2 6 10 8L22 6M2 19l7-7m13 7-7-7"/>
+<path fill="#c54b36" d="M18 7h3v4h-3z"/>
+</symbol>
+</defs>
+</svg>
+<div class="closed-state" hidden>
+<p>Your browser kept this tab open.</p>
+<button class="reopen-link" type="button">Reopen home page</button>
+</div>
+<section class="desktop-toy" aria-labelledby="toy-title" hidden>
+<div class="titlebar">
+<span id="toy-title">After Hours — Signal Recovery</span>
+</div>
+<div class="toy-content">
+<p>Make every pixel green. Each click flips that pixel and its four neighbors.</p>
+<div class="signal-board" role="group" aria-label="Signal recovery puzzle">
+</div>
+<div class="toy-status">
+<span class="toy-moves">Moves: 0</span>
+<span>4 × 4</span>
+</div>
+<div class="toy-actions">
+<button class="task-button toy-reset" type="button">Reset</button>
+<button class="task-button toy-new" type="button">New puzzle</button>
+<button class="task-button toy-return" type="button">Restore window</button>
+</div>
+<p class="toy-result" role="status" aria-live="polite">
+</p>
+</div>
+</section>
+<div class="window" id="window">
+<div class="titlebar">
+<svg class="icon" aria-hidden="true">
+<use href="#i-home">
+</use>
+</svg>
+<span class="window-title">Nan Bao — Personal Home Page</span>
+<div class="window-controls">
+<button class="title-control minimize-window" type="button" title="Minimize" aria-label="Minimize home page">
+<span class="control-glyph minimize-glyph" aria-hidden="true">
+</span>
+</button>
+<button class="expand" type="button" aria-label="Maximize window" title="Maximize window" aria-pressed="false">
+<span class="maximize-icon" aria-hidden="true">
+</span>
+</button>
+<button class="title-control close-window" type="button" title="Close tab" aria-label="Close current browser tab">
+<svg class="control-glyph close-glyph" viewBox="0 0 10 9" aria-hidden="true" shape-rendering="crispEdges">
+<path fill="black" d="M0 0h2v1h1v1h1v1h2V2h1V1h1V0h2v1H9v1H8v1H7v2h1v1h1v1h1v2H8V8H7V7H6V6H4v1H3v1H2v1H0V7h1V6h1V5h1V3H2V2H1V1H0z"/>
+</svg>
+</button>
+</div>
+</div>
+<nav aria-label="Page contents">
+<a href="#about">
+<svg class="icon" aria-hidden="true">
+<use href="#i-home">
+</use>
+</svg>About Me</a>
+<a href="#publications">
+<svg class="icon" aria-hidden="true">
+<use href="#i-paper">
+</use>
+</svg>Publications</a>
+<a href="#education">
+<svg class="icon" aria-hidden="true">
+<use href="#i-book">
+</use>
+</svg>Education</a>
+<a href="#experience">
+<svg class="icon" aria-hidden="true">
+<use href="#i-folder">
+</use>
+</svg>Internships</a>
+</nav>
+<div class="document">
+<header id="about" class="masthead" aria-label="About Nan Bao">
+<div class="profile">
+<img class="portrait" src="images/portrait.jpg" alt="Nan Bao" width="150" height="188">
+<div class="profile-info">
+<div class="name">
+<h1>Nan Bao</h1>
+<span class="chinese" lang="zh-Hant">包楠</span>
+<span class="mongolian" lang="mn-Mong">ᠪᠣᠣ ᠨᠠᠨ</span>
+</div>
+
+<p class="affiliation">PhD Student in Computer Science and Technology<br>School of Computer Science and Engineering<br>State Key Laboratory of Virtual Reality Technology and Systems<br>
+<b>Beihang University</b>
+</p>
+<p class="contact-links">
+<a href="#contact-email" data-email-user="nbao" data-email-domain="buaa.edu.cn">nbao [at] buaa.edu.cn</a> &nbsp;·&nbsp; <a href="https://scholar.google.com/citations?user=44MDFE8AAAAJ&amp;hl=en">Google Scholar</a>
+</p>
+</div>
+</div>
+<p class="intro">I am a PhD student at Beihang University. My research interests include <b>multimodal visual perception</b> and <b>controllable image generation</b>. My recent work explores event–RGB segmentation under challenging sensing conditions and layout-to-image generation with only a few examples.</p>
+</header>
+<hr>
+<main>
+
+<section id="publications" aria-labelledby="pub-heading">
+<h2 id="pub-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-paper">
+</use>
+</svg>Publications</h2>
+<h3 class="research-group-title" id="first-author-heading">First-author Research</h3>
+<ol class="papers" reversed>
+<li>
+<article>
+<h3>
+<a href="https://arxiv.org/abs/2605.31266">Envisioning Beyond the Few: Disentangled Semantics and Primitives for Few-Shot Atypical Layout-to-Image Generation</a>
+</h3>
+<p class="authors">
+<b>Nan Bao</b>, Yifan Zhao, Wenzhuang Wang, Jia Li<br>
+<i>International Conference on Machine Learning (ICML), 2026.</i>
+</p>
+<p class="description">Separating semantic identity from visual primitives to generate images from layouts with only a few examples.</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2605.31266">Paper</a> | <a href="https://github.com/iCVTEAM/DSP">Code</a> ]</p>
+</article>
+</li>
+<li>
+<article>
+<h3>
+<a href="https://arxiv.org/abs/2511.08269">Re-Coding for Uncertainties: Edge-Awareness Semantic Concordance for Resilient Event-RGB Segmentation</a>
+</h3>
+<p class="authors">
+<b>Nan Bao</b>, Yifan Zhao, Lin Zhu, Jia Li<br>
+<i>Advances in Neural Information Processing Systems (NeurIPS), 2025.</i>
+</p>
+<p class="description">Aligning event and RGB features through shared edge cues for resilient semantic segmentation in difficult conditions.</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2511.08269">Paper</a> | <a href="https://github.com/iCVTEAM/ESC">Code &amp; Datasets</a> ]</p>
+</article>
+</li>
+</ol>
+<div class="collaborative-group-horizontal" role="group" aria-labelledby="collaborative-heading">
+<h3 class="research-group-title" id="collaborative-heading">Collaborative Research</h3>
+<ol class="papers collaborative-papers" reversed>
+<li>
+<article>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2601.15475">Seeing through Light and Darkness: Sensor-Physics Grounded Deblurring HDR NeRF from Single-Exposure Images and Events</a>
+</h3>
+<p class="authors" lang="en">Yunshan Qi, Lin Zhu, <b>Nan Bao</b>, Yifan Zhao, Jia Li<br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.</i>
+</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2601.15475">Paper</a> | <a href="https://icvteam.github.io/See-NeRF.html">Project</a> | <a href="https://github.com/iCVTEAM/See-NeRF">Code</a> ]</p>
+</article>
+</li>
+<li>
+<article>
+<h3 lang="en">
+<a href="https://arxiv.org/abs/2406.14360">Deblurring Neural Radiance Fields with Event-Driven Bundle Adjustment</a>
+</h3>
+<p class="authors" lang="en">Yunshan Qi, Lin Zhu, Yifan Zhao, <b>Nan Bao</b>, Jia Li<br>
+<i>ACM International Conference on Multimedia (ACM MM), 2024.</i>
+</p>
+<p class="paper-links">[ <a href="https://arxiv.org/pdf/2406.14360">Paper</a> | <a href="https://icvteam.github.io/EBAD-NeRF.html">Project</a> | <a href="https://github.com/iCVTEAM/EBAD-NeRF">Code</a> ]</p>
+</article>
+</li>
+</ol>
+</div>
+</section>
+<hr>
+<section id="education" aria-labelledby="edu-heading">
+<h2 id="edu-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-book">
+</use>
+</svg>Education</h2>
+<table class="education" aria-label="Education history">
+<tbody>
+<tr>
+<th scope="row">2024–present</th>
+<td>
+<b>Beihang University</b>
+<br>PhD student in Computer Science and Technology</td>
+</tr>
+<tr>
+<th scope="row">2023–2024</th>
+<td>
+<b>Beihang University</b>
+<br>Master’s studies in Software Engineering</td>
+</tr>
+<tr>
+<th scope="row">2018–2022</th>
+<td>
+<b>Beihang University</b>
+<br>Bachelor’s degree in Computer Science and Technology</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="experience" aria-labelledby="exp-heading">
+<h2 id="exp-heading">
+<svg class="icon" aria-hidden="true">
+<use href="#i-folder">
+</use>
+</svg>Internships</h2>
+<table class="education" aria-label="Internship history">
+<tbody>
+<tr>
+<th scope="row">2022–2023</th>
+<td>
+<b>National Education Examinations Authority</b>
+<br>Internship, September 2022 – August 2023</td>
+</tr>
+<tr>
+<th scope="row">2021–2022</th>
+<td>
+<b>SenseTime</b>
+<br>Internship, December 2021 – September 2022</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+<hr>
+<footer>
+<p class="return">
+<a href="#top">Back to top</a>
+</p>
+<address>
+<a class="mail-link" href="#contact-email" data-email-user="nbao" data-email-domain="buaa.edu.cn">
+<svg class="icon" aria-hidden="true">
+<use href="#i-mail">
+</use>
+</svg>Write to Nan Bao</a>
+</address>
+</footer>
+</div>
+<div class="statusbar">
+<span class="copyright" id="contact-email">© 2026 Nan Bao</span>
+<div class="edition-control">
+<label for="edition-select">Language</label>
+<select id="edition-select" aria-label="Language">
+</select>
+<noscript>
+<p>
+<a href="zh/">中文</a>
+</p>
+</noscript>
+</div>
+</div>
+</div>
+<button class="minimized-titlebar" type="button" aria-label="Restore minimized home page window" title="Restore window" hidden>
+<span>Nan Bao — minimized</span>
+<span class="mini-restore-frame" aria-hidden="true">
+</span>
+</button>
+</body>
+</html>
+
+
+
+
+

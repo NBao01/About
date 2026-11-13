@@ -1,0 +1,200 @@
+﻿@font-face{font-family:Hawang;src:url('../webfonts/MHW8200.woff2') format('woff2');font-display:swap}
+*{box-sizing:border-box}html{scroll-padding-top:20px}body{margin:0;background:#008080;color:#000;font:18px/1.5 "Times New Roman",Times,serif}a:link{color:#0000ee}a:visited{color:#551a8b}a:active{color:red}a:focus-visible,button:focus-visible{outline:2px dotted #000;outline-offset:3px}
+.window{max-width:980px;margin:30px auto;padding:4px;background:#c0c0c0;border:2px solid;border-color:#fff #202020 #202020 #fff;box-shadow:1px 1px 0 #000}
+.titlebar{background:linear-gradient(90deg,#000080,#1084d0);color:white;min-height:31px;display:flex;align-items:center;gap:8px;padding:3px 4px 3px 7px;font:bold 15px/1.3 Tahoma,Arial,sans-serif}
+.titlebar .icon{width:20px;height:20px;margin:0}.window-title{flex:1}.expand{background:#c0c0c0;color:#000;border:2px solid;border-color:#fff #333 #333 #fff;width:25px;height:24px;display:grid;place-items:center;cursor:pointer;flex-shrink:0}.expand:active{border-color:#333 #fff #fff #333}.maximize-icon{width:12px;height:11px;border:1px solid #000;border-top-width:3px}.window.expanded{max-width:none;margin:8px}
+nav{display:flex;gap:5px;padding:9px 10px 10px;border-bottom:1px solid #808080;box-shadow:0 1px 0 #fff;align-items:stretch}
+nav:before{content:'';width:4px;border:1px solid;border-color:#fff #808080 #808080 #fff;margin:3px 5px 3px 0;flex-shrink:0}
+nav a:link,nav a:visited{min-width:99px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:#000;background:#c0c0c0;border:2px solid;border-color:#fff #808080 #808080 #fff;padding:7px 11px;font:15px/1.3 Tahoma,Arial,sans-serif}
+nav a:hover{background:#d2d2d2}nav a:active,nav a[aria-current="location"]{border-color:#808080 #fff #fff #808080;background:#d6d6d6}nav .icon{width:28px;height:28px;margin:0}
+.icon{display:inline-block;width:24px;height:24px;vertical-align:-5px;margin-right:8px;shape-rendering:crispEdges}.icon-defs{position:absolute;width:0;height:0;overflow:hidden}
+.document{margin:12px 9px 9px;background:#e8e8e8;border:2px solid;border-color:#808080 #fff #fff #808080;box-shadow:inset 1px 1px #333;padding:28px 34px}
+h1,h2,h3,p{margin:0}h1{font-size:34px;line-height:1.2}h2{font-size:26px;margin:25px 0 16px}h3{font-size:20px;line-height:1.4}p{margin:12px 0}hr{height:2px;border:0;border-top:1px solid #808080;border-bottom:1px solid #fff;margin:25px 0}
+.profile{display:grid;grid-template-columns:135px minmax(0,1fr);gap:26px;align-items:center;background:#c0c0c0;border:2px solid;border-color:#808080 #fff #fff #808080;padding:20px;margin-bottom:22px}
+.portrait{display:block;width:125px;height:157px;object-fit:cover;object-position:center 30%;padding:3px;background:#c0c0c0;border:2px solid;border-color:#fff #808080 #808080 #fff}
+.profile-info{min-width:0}.name{display:flex;align-items:center;gap:18px;margin-bottom:12px}.chinese{writing-mode:vertical-rl;font-size:24px;letter-spacing:3px;line-height:1.1}.mongolian{font-family:Hawang,serif;writing-mode:vertical-lr;font-size:24px;line-height:1.15;height:65px}.affiliation{margin:0;font-size:17px}.contact-links{font-size:17px;overflow-wrap:anywhere;margin-bottom:0}.intro{margin:0}
+.papers{padding-left:29px;margin:0}.papers>li{padding-left:5px;margin-bottom:27px}.authors,.description,.paper-links{margin:10px 0}.education{width:100%;border-collapse:collapse}.education th,.education td{padding:8px 15px 8px 0;text-align:left;vertical-align:top}.education th{font-weight:400;white-space:nowrap;width:145px}.return{margin:25px 0 0}footer{text-align:center}footer p{margin:12px 0}address{font-style:normal}.mail-link{display:inline-flex;align-items:center;gap:8px}.mail-link .icon{margin:0}
+.statusbar{display:flex;gap:5px;margin:0 9px 5px;font:14px/1.4 Tahoma,Arial,sans-serif}.statusbar span{padding:4px 8px;border:1px solid;border-color:#808080 #fff #fff #808080}.statusbar span:first-child{flex:1}.statusbar span:last-child{min-width:120px}
+@media(max-width:1000px){.window{margin:18px}}
+@media(max-width:600px){body{font-size:17px}.window{margin:8px;padding:3px}.window.expanded{margin:0}.titlebar{font-size:14px}.document{padding:18px 14px;margin:10px 5px}.profile{grid-template-columns:85px minmax(0,1fr);padding:13px;gap:15px;align-items:start}.portrait{width:85px;height:110px}.name{flex-wrap:wrap;gap:10px}h1{font-size:28px}.chinese{font-size:21px}.mongolian{font-size:21px;height:54px}.affiliation,.contact-links{font-size:16px}nav{padding:8px 4px;gap:4px}nav:before{display:none}nav a:link,nav a:visited{min-width:0;flex:1;font-size:13px;padding:6px 2px}nav .icon{width:24px;height:24px}.education th{width:105px;padding-right:12px}h3{font-size:19px}.statusbar{margin:0 5px 4px;font-size:13px}.statusbar span:last-child{min-width:0}}
+@media(max-width:390px){.profile{grid-template-columns:1fr}.portrait{margin:auto}.name{justify-content:center}.affiliation,.contact-links{text-align:center}.document{padding:15px 12px}}
+@media print{body{background:white}.window{max-width:none;margin:0;border:0;box-shadow:none;padding:0}.titlebar,nav,.statusbar,.return{display:none}.document{border:0;box-shadow:none;margin:0;padding:0;background:white}.profile{background:white}.papers>li{break-inside:avoid}}/* Traditional Chinese typography with the same window and toolbar. */
+body{font-family:"Times New Roman","PMingLiU","MingLiU","Songti TC","Noto Serif TC",serif;line-height:1.75}
+.titlebar,nav a:link,nav a:visited,.statusbar{font-family:Tahoma,"PMingLiU","MingLiU",Arial,serif}
+h1{font-family:"PMingLiU","MingLiU","Songti TC",serif;font-size:34px;letter-spacing:4px}
+h2{font-size:25px;line-height:1.5}h3{font-family:"Times New Roman",Times,serif;line-height:1.45}
+.latin-name{font-family:"Times New Roman",Times,serif;font-size:23px;line-height:1.2}
+.name{gap:18px}.affiliation{line-height:1.7}.intro,.description{text-align:justify}
+.authors{font-family:"Times New Roman",Times,serif;line-height:1.5}
+.education th{width:150px}.education td{line-height:1.65}
+@media(max-width:600px){h1{font-size:28px}.latin-name{font-size:21px}.name{gap:10px}nav a:link,nav a:visited{font-size:14px}.education th{width:110px;font-size:16px}.intro,.description{text-align:left}}/* Horizontal Windows shell around a right-to-left, vertical Chinese document. */
+.window{max-width:1180px;margin:20px auto}
+.document.vertical-reader{padding:0;height:clamp(420px,calc(100dvh - 210px),650px);min-height:0;overflow-x:auto;overflow-y:hidden;direction:rtl;scrollbar-color:#c0c0c0 #dedede;scrollbar-width:auto}
+.scrollbook{display:flex;flex-direction:row-reverse;direction:ltr;width:max-content;height:100%;min-width:100%}
+.leaf{display:flex;flex-direction:row-reverse;gap:24px;flex:none;padding:27px 30px;height:100%;border-left:1px solid #999;box-shadow:-1px 0 #fff;overflow:auto;scroll-margin:0}
+.leaf>h2{writing-mode:vertical-rl;text-orientation:mixed;margin:0;font:26px/1.5 "PMingLiU","MingLiU",serif;letter-spacing:4px;flex:none;border-left:1px solid #aaa;padding-left:14px}
+.about-leaf{width:max-content;gap:25px}.v-profile{display:flex;flex-direction:row-reverse;gap:19px;padding:19px;background:#c0c0c0;border:2px solid;border-color:#808080 #fff #fff #808080;flex:none;width:max-content;height:100%}
+.photo-column{width:125px;flex:none;writing-mode:horizontal-tb;text-align:center}.photo-column .portrait{width:125px;height:157px;margin:0 auto}.photo-column p{font-size:19px;margin:14px 0}.photo-column a{display:block;font-size:17px;margin-top:12px}
+.v-identity{writing-mode:vertical-rl;display:flex;align-items:center;gap:20px;flex:none}.v-identity h1{font-size:35px;letter-spacing:7px}.v-identity .mongolian{height:100px;font-size:27px}
+.v-affiliation{writing-mode:vertical-rl;min-width:0;line-height:1.8;letter-spacing:2px;font-size:18px}.v-affiliation p{margin:0 0 0 10px}
+.v-intro{writing-mode:vertical-rl;letter-spacing:2px;line-height:2;font-size:18px;flex:1;min-width:0}.v-intro h2{font-size:25px;letter-spacing:4px;margin:0 0 0 20px}.v-intro p{margin:0;text-align:start}
+.research-leaf{width:820px}.paper-shelf{display:flex;flex-direction:row-reverse;gap:23px;min-width:0;height:100%}
+.paper-card{width:327px;flex:none;background:#e8e8e8;display:flex;flex-direction:column;min-height:0;padding:0 0 0 21px;border-left:1px solid #aaa;overflow:auto}
+.paper-card h3{writing-mode:horizontal-tb;font:19px/1.35 "Times New Roman",serif;margin:0}.paper-card .authors{writing-mode:horizontal-tb;font:16px/1.4 "Times New Roman",serif;margin:14px 0}.paper-card .description{writing-mode:vertical-rl;text-align:start;align-self:flex-end;font-size:18px;letter-spacing:2px;line-height:1.9;flex:1;min-height:100px;margin:6px 0 12px}.paper-card .paper-links{font-size:17px;margin:0;writing-mode:horizontal-tb}
+.history-leaf{width:max-content}.experience-leaf{width:max-content}.v-history{writing-mode:vertical-rl;line-height:1.9;letter-spacing:2px;min-width:0}.v-history article{margin-left:32px}.v-history h3{font-family:"PMingLiU","MingLiU",serif;font-size:22px;line-height:1.6;margin:0 0 0 16px}.v-history p{font-size:18px;margin:0 0 0 10px}
+.statusbar{flex-wrap:wrap;align-items:stretch}.statusbar .language-links{display:flex;gap:12px;min-width:0}.statusbar span:last-child{min-width:0}
+@media(max-width:1220px){.window{margin:15px}}
+@media(max-width:600px){.window{margin:7px}.document.vertical-reader{height:clamp(420px,calc(100dvh - 195px),620px);padding:0;margin:10px 5px}.leaf{padding:20px;gap:18px}.about-leaf{width:max-content}.v-profile{width:max-content;padding:15px;gap:15px}.photo-column{width:85px}.photo-column .portrait{width:85px;height:110px}.research-leaf{width:710px}.paper-card{width:285px;padding-left:15px}.paper-card h3{font-size:18px}.history-leaf{width:max-content}.experience-leaf{width:max-content}.statusbar .language-links{font-size:13px}}
+@media print{.document.vertical-reader{height:auto;overflow:visible;direction:ltr}.scrollbook{display:block;width:auto;height:auto}.leaf{height:550px;margin-bottom:25px;border:0;box-shadow:none;break-inside:avoid}.statusbar{display:none}}/* The desktop never scrolls. The window has exactly one scrolling content pane. */
+html{height:100%;overflow:hidden;direction:ltr;scroll-padding:0}
+body{height:100dvh;width:100%;min-width:0;margin:0;overflow:hidden;direction:ltr}
+.window{display:flex;flex-direction:column;width:calc(100% - 40px);max-width:1180px;height:calc(100dvh - 40px);min-width:0;min-height:0;margin:20px auto;padding:4px;overflow:hidden;direction:ltr}
+.titlebar,nav,.statusbar{flex-shrink:0}
+.document{flex:1 1 0;min-height:0;min-width:0;height:auto;max-height:none;overflow:auto;overscroll-behavior:contain;scroll-padding:20px;scrollbar-color:#c0c0c0 #dedede}
+.document.vertical-reader{flex:1 1 0;min-height:0;min-width:0;height:auto;max-height:none;width:auto;overflow:auto;direction:rtl;padding:0;scroll-padding:0}
+.scrollbook{height:100%;min-height:520px;width:max-content;min-width:100%;overflow:visible;direction:ltr}
+.leaf{overflow:visible}.paper-card{overflow:visible}
+.statusbar{position:static;width:auto;max-width:none;min-width:0;flex-wrap:wrap}
+.statusbar .language-links{display:flex;align-items:center;gap:12px;border:0;padding:0 5px;min-width:0}
+.statusbar .language-links span{border:0;padding:0;min-width:0;flex:none}
+.edition-links{font-size:16px;line-height:1.8}
+.window.expanded{width:100%;max-width:none;height:100dvh;margin:0}
+@media(max-width:600px){.window{width:calc(100% - 14px);height:calc(100dvh - 14px);margin:7px auto}.document{min-height:0}.document.vertical-reader{height:auto;min-height:0;padding:0}.window.expanded{width:100%;height:100dvh;margin:0}}
+@media print{html,body{height:auto;overflow:visible}.window,.window.expanded{display:block;height:auto;width:auto;max-width:none;margin:0;overflow:visible}.document,.document.vertical-reader{height:auto;overflow:visible;min-height:0}.scrollbook{display:block;height:auto;min-height:0;width:auto}.leaf{height:550px}.titlebar,nav,.statusbar{display:none}}/* Windows 95-inspired palette and compact controls. */
+body{background:#008080;font-family:"Times New Roman",Times,serif}
+.window{max-width:900px;margin:28px auto;border-color:#dfdfdf #000 #000 #dfdfdf;padding:3px;box-shadow:inset 1px 1px #fff,inset -1px -1px #808080}
+.titlebar{background:#000080;font-family:"MS Sans Serif",Tahoma,Arial,sans-serif;min-height:27px;padding:2px 3px 2px 5px;font-size:14px}
+.titlebar .icon{width:16px;height:16px}.expand{width:23px;height:21px}
+nav{padding:7px 8px;gap:5px;justify-content:flex-start}
+nav a:link,nav a:visited{flex-direction:row;min-width:0;gap:7px;font-family:"MS Sans Serif",Tahoma,Arial,sans-serif;font-size:14px;padding:6px 11px}
+nav .icon{width:22px;height:22px}.document{background:#c0c0c0;padding:24px 28px;margin:9px 6px;border:0;box-shadow:none}
+.profile{background:#c0c0c0;padding:22px;border-color:#808080 #fff #fff #808080;box-shadow:inset 1px 1px #404040}
+h2{font-size:25px}.statusbar{font-family:"MS Sans Serif",Tahoma,Arial,sans-serif}.versions{font:15px/1.8 "Times New Roman",serif;text-align:center;padding:10px 0 13px}
+@media(max-width:940px){.window{margin:16px}}
+@media(max-width:600px){.window{margin:7px}.document{padding:17px 10px;margin:7px 4px}nav{padding:7px 4px;gap:4px}nav a:link,nav a:visited{flex:1;flex-direction:column;padding:5px 2px;gap:4px;font-size:13px}.profile{padding:13px}.versions{font-size:14px}}
+@media print{.window{margin:0;box-shadow:none}.document,.profile{background:white}.versions{display:none}}
+/* Match the restored Windows 95 chrome, with Chinese text. */
+body{font-family:"Times New Roman","PMingLiU","MingLiU","Songti TC",serif}
+.titlebar,nav a:link,nav a:visited,.statusbar{font-family:"MS Sans Serif",Tahoma,"PMingLiU","MingLiU",Arial,serif}
+.window{max-width:900px;width:calc(100% - 40px);height:calc(100dvh - 40px);margin:20px auto}
+.window.expanded{max-width:none;width:100%;height:100dvh;margin:0}
+.document.vertical-reader{padding:0;min-height:0;height:auto;background:#c0c0c0}
+.paper-card{background:#c0c0c0}
+@media(max-width:600px){.window{width:calc(100% - 14px);height:calc(100dvh - 14px);margin:7px auto}.window.expanded{width:100%;height:100dvh;margin:0}.document.vertical-reader{padding:0}.statusbar .language-links{gap:8px}}
+@media print{.window,.window.expanded{height:auto;width:auto;margin:0}.document.vertical-reader{background:#fff;height:auto}.paper-card{background:#fff}}
+
+/* Native scrollbar behavior, classic Windows chrome in Chromium/WebKit. */
+.document,.document.vertical-reader{scrollbar-width:auto;scrollbar-color:auto;--scroll-face:#c0c0c0;--scroll-shadow:#808080;--scroll-dark:#404040;--scroll-light:#fff;--scroll-track:#dedede}
+.document::-webkit-scrollbar{width:18px;height:18px;background:var(--scroll-face)}
+.document::-webkit-scrollbar-track{background-color:var(--scroll-track);background-image:repeating-conic-gradient(#c0c0c0 0% 25%,#eee 0% 50%);background-size:2px 2px;box-shadow:inset 1px 1px #808080}
+.document::-webkit-scrollbar-thumb{border-radius:0;background:var(--scroll-face);border:1px solid;border-color:var(--scroll-light) var(--scroll-dark) var(--scroll-dark) var(--scroll-light);box-shadow:inset 1px 1px #dfdfdf,inset -1px -1px var(--scroll-shadow);min-height:28px;min-width:28px}
+.document::-webkit-scrollbar-button{display:none}
+.document::-webkit-scrollbar-button:single-button{display:block;width:18px;height:18px;background-color:var(--scroll-face);background-repeat:no-repeat;background-position:center;background-size:8px 8px;border:1px solid;border-color:#fff var(--scroll-dark) var(--scroll-dark) #fff;box-shadow:inset -1px -1px var(--scroll-shadow)}
+.document::-webkit-scrollbar-button:single-button:vertical:decrement{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M0 6 4 2 8 6Z' fill='%23000'/%3E%3C/svg%3E")}
+.document::-webkit-scrollbar-button:single-button:vertical:increment{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M0 2 8 2 4 6Z' fill='%23000'/%3E%3C/svg%3E")}
+.document::-webkit-scrollbar-button:single-button:horizontal:decrement{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M6 0 2 4 6 8Z' fill='%23000'/%3E%3C/svg%3E")}
+.document::-webkit-scrollbar-button:single-button:horizontal:increment{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M2 0 6 4 2 8Z' fill='%23000'/%3E%3C/svg%3E")}
+.document::-webkit-scrollbar-button:single-button:active{border-color:var(--scroll-shadow) #fff #fff var(--scroll-shadow);box-shadow:none;background-position:calc(50% + 1px) calc(50% + 1px)}
+.document::-webkit-scrollbar-corner{background:var(--scroll-face)}
+@supports not selector(::-webkit-scrollbar){.document,.document.vertical-reader{scrollbar-color:#c0c0c0 #dedede}}
+@media(forced-colors:active){.document,.document.vertical-reader{scrollbar-color:auto}}/* Windows 95: sharp, dark bevels. */ .document,.document.vertical-reader{--scroll-dark:#000;--scroll-track:#dfdfdf}
+
+/* One status-bar layout and one language selector in every edition. */
+.statusbar{display:flex;align-items:stretch;flex-wrap:nowrap;gap:6px;flex:none;margin:0 7px 5px;font:14px/1.4 Tahoma,"PMingLiU",Arial,serif}
+.statusbar .copyright{display:flex;align-items:center;flex:1;min-width:0;padding:4px 8px;border:1px solid;border-color:#808080 #fff #fff #808080;white-space:nowrap}
+.statusbar .edition-control{display:flex;align-items:center;gap:7px;flex:none;padding:2px 5px 2px 8px;border:1px solid;border-color:#808080 #fff #fff #808080}
+.edition-control label{white-space:nowrap}.edition-control select{max-width:205px;min-width:0;margin:0;border:1px solid #808080;border-radius:0;background:#fff;color:#000;padding:2px 3px;font:14px/1.4 Tahoma,"PMingLiU",Arial,serif}
+.edition-control select:focus-visible{outline:1px dotted #000080;outline-offset:2px}
+@media(max-width:600px){.statusbar{gap:4px;margin:0 5px 4px;font-size:12px}.statusbar .copyright{padding:4px 5px}.statusbar .edition-control{gap:4px;padding:2px 3px}.edition-control label{display:none}.edition-control select{max-width:175px;font-size:12px}}
+@media print{.statusbar{display:none}}
+
+/* Compact, square title-bar control with pixel-aligned maximize/restore glyphs. */
+.titlebar .expand{appearance:none;position:relative;display:block;flex:none;width:18px;height:16px;min-width:18px;margin:0 1px 0 4px;padding:0;border:0;border-radius:0;background:#c0c0c0;color:#000;box-shadow:inset -1px -1px #000,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf;cursor:default;line-height:1}
+.titlebar .maximize-icon{position:absolute;display:block;left:4px;top:3px;width:10px;height:9px;margin:0;border:1px solid #000;border-top-width:2px;background:transparent;box-sizing:border-box}
+.titlebar .expand:active{border:0;box-shadow:inset 1px 1px #000,inset -1px -1px #fff,inset 2px 2px #808080}
+.titlebar .expand:active .maximize-icon{transform:translate(1px,1px)}
+.titlebar .expand:focus-visible{outline:1px dotted #000;outline-offset:-4px}
+.window.expanded .maximize-icon{border:0;background:none;left:4px;top:3px}
+.window.expanded .maximize-icon::before,.window.expanded .maximize-icon::after{content:'';position:absolute;width:8px;height:7px;background:#c0c0c0;border:1px solid #000;border-top-width:2px;box-sizing:border-box}
+.window.expanded .maximize-icon::before{left:2px;top:0}.window.expanded .maximize-icon::after{left:0;top:2px}/* Two vertical contact columns, read from right to left. */
+.photo-column .vertical-contact{display:flex;flex-direction:row-reverse;justify-content:center;align-items:flex-start;gap:14px;margin-top:15px;writing-mode:horizontal-tb}
+.photo-column .vertical-contact a{display:block;writing-mode:vertical-rl;text-orientation:upright;white-space:nowrap;letter-spacing:2px;font-size:18px;line-height:1.45;margin:0}
+
+.return a{display:inline;padding:0;background:none;border:0;font-size:inherit;line-height:inherit;white-space:normal}
+.return a:link{color:#0000ee}.return a:visited{color:#551a8b}.return a:active{color:red}.return a:focus-visible{outline:1px dotted #000;outline-offset:3px}
+.experience-leaf .return{writing-mode:vertical-rl;text-orientation:upright;letter-spacing:2px;margin:0 20px 0 0;text-align:start}
+
+/* Shared type scale across languages and reading directions. */
+:root{--text-body:18px;--text-secondary:16px;--text-ui:14px;--text-section:26px;--text-paper:20px;--text-subsection:20px;--font-document:"Times New Roman","PMingLiU","MingLiU","Songti TC",serif;--text-name:35px}
+body{font-size:var(--text-body)}
+.document h2{font-size:var(--text-section)}
+.document h3,.paper-card h3{font-size:var(--text-paper)}
+.document .research-group-title{font-family:var(--font-document);font-size:var(--text-subsection);font-weight:700;font-style:normal;line-height:1.5;letter-spacing:normal}
+.document .intro,.document .description,.v-intro,.v-affiliation,.v-history p,.education td{font-size:var(--text-body)}
+.document .authors,.document .paper-links,.document .contact-links,.education th{font-size:var(--text-secondary)}
+.titlebar,nav a:link,nav a:visited,.statusbar,.edition-control select{font-size:var(--text-ui)}
+.document .return,.document .return a,.experience-leaf .return,.experience-leaf .return a{font-size:var(--text-secondary);font-weight:400;line-height:1.5}
+.experience-leaf .return{letter-spacing:normal}
+@media(max-width:600px){:root{--text-body:17px;--text-secondary:15px;--text-ui:13px;--text-section:25px;--text-paper:19px;--text-subsection:19px}}
+
+/* Equal secondary-name hierarchy in horizontal and vertical Chinese editions. */
+.name>.latin-name,.photo-column p[lang="en"]{font-family:"Times New Roman",Times,serif;font-size:24px;font-weight:400;font-style:normal;line-height:1.25}
+.name>.mongolian,.v-identity>.mongolian{font-size:24px;font-weight:400;font-style:normal}
+.name h1.chinese-name,.v-identity h1{font-size:35px;font-weight:700;letter-spacing:7px}
+@media(max-width:600px){.name>.latin-name,.photo-column p[lang="en"]{font-size:22px}.name>.mongolian,.v-identity>.mongolian{font-size:21px}}
+
+/* Numbered papers, with shorter vertical summary columns. */
+.paper-card .paper-number{writing-mode:horizontal-tb;flex:none;align-self:flex-start;font:700 var(--text-paper,20px)/1.25 "Times New Roman",serif;margin:0 0 10px}
+.paper-card .description{flex:0 0 calc(180px + 2.25em);height:calc(180px + 2.25em);min-height:calc(180px + 2.25em);max-height:calc(180px + 2.25em);margin-top:auto;padding-top:0}
+@media(max-width:600px){.paper-card .description{flex-basis:calc(160px + 1.75em);height:calc(160px + 1.75em);max-height:calc(160px + 1.75em);min-height:calc(160px + 1.75em)}}
+
+/* Indent the whole vertical paragraph, keeping every column's start aligned. */
+.v-intro>p{padding-inline-start:1.5em;padding-inline-end:1em;text-indent:0;box-sizing:border-box}
+.paper-card .description{padding-inline-start:1.5em;padding-inline-end:.75em;text-indent:0;box-sizing:border-box}
+.v-affiliation>p{padding-inline-start:1em;text-indent:0;box-sizing:border-box}
+.v-history article>p{padding-inline-start:1.5em;padding-inline-end:.75em;text-indent:0;box-sizing:border-box}
+@media(max-width:600px){.v-intro>p{padding-inline-start:1.25em;padding-inline-end:.75em}.paper-card .description{padding-inline-start:1.25em;padding-inline-end:.5em}.v-history article>p{padding-inline-start:1.25em;padding-inline-end:.5em}}
+
+:root{--closing-line-gap:8px;--closing-return-gap:-6px;--closing-end-gap:24px;--closing-text-line:calc(var(--text-secondary,16px) * 1.5);--closing-mail-line:max(24px,var(--closing-text-line));--closing-mail-start:calc(var(--closing-line-gap) + var(--closing-text-line) + var(--closing-return-gap));--closing-extent:calc(1px + var(--closing-mail-start) + var(--closing-mail-line) + var(--closing-end-gap))}/* Identical spacing rotated into the vertical document's right-to-left block axis. */
+.experience-leaf{border-left:0;box-shadow:none}
+.scrollbook>.closing-leaf{position:relative;display:block;flex:none;box-sizing:border-box;width:var(--closing-extent);min-width:var(--closing-extent);height:100%;margin:0;padding:0;overflow:visible;border:0;border-right:1px solid #808080;box-shadow:inset -1px 0 #fff;font-size:var(--text-secondary,16px);line-height:1.5}
+.closing-leaf .return{position:absolute;right:var(--closing-line-gap);top:27px;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:normal;margin:0;padding:0;font-size:var(--text-secondary,16px);font-weight:400;line-height:1.5;white-space:nowrap}
+.closing-leaf .closing-mail{position:absolute;right:var(--closing-mail-start);top:50%;transform:translateY(-50%);display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;writing-mode:vertical-rl;text-orientation:upright;font-size:var(--text-secondary,16px);font-weight:400;line-height:1.5;letter-spacing:2px;white-space:nowrap}
+.closing-leaf .closing-mail .icon{flex:none;width:24px;height:24px;margin:0}
+@media(max-width:600px){.closing-leaf .return{top:20px}}
+@media print{.scrollbook>.closing-leaf{height:250px}}
+
+.research-group-title{margin:19px 0 20px}
+.collaborative-group-horizontal{margin-top:30px;padding-top:7px;border-top:1px solid #999}
+.collaborative-papers .authors{margin:10px 0}.collaborative-papers .paper-links{margin:10px 0 0}
+.research-leaf{width:auto}
+.research-leaf .first-author-group,.research-leaf .collaborative-group{display:flex;flex-direction:row-reverse;gap:22px;flex:none;height:100%;min-width:0}
+.research-leaf .first-author-group>.paper-shelf{flex:none;height:100%}
+.research-leaf .collaborative-group{padding-right:27px;border:0;margin-right:5px}
+.research-leaf .research-group-title{writing-mode:vertical-rl;text-orientation:upright;display:flex;align-items:center;justify-content:center;flex:none;align-self:stretch;margin:0;border:0;padding:0}
+.research-leaf .collaborative-shelf{display:flex;flex-direction:row-reverse;gap:23px;height:100%}
+.research-leaf .collaboration-card{width:300px;flex:none;height:100%;padding-left:21px}
+.research-leaf .collaboration-card .paper-links{margin-top:15px}
+@media(max-width:600px){.research-leaf{width:auto}.research-leaf .first-author-group,.research-leaf .collaborative-group{gap:14px}.research-leaf .collaborative-group{padding-right:20px}.research-leaf .collaboration-card{width:285px}}
+@media print{.research-leaf{width:auto;height:auto;display:block}.research-leaf .first-author-group,.research-leaf .collaborative-group{height:auto;margin-bottom:30px}.research-leaf .collaborative-shelf{height:500px}}
+
+/* Frame each group of papers on both sides; keep its vertical label outside the frame. */
+.research-leaf>h2{border-left:0;padding-left:0}
+.research-leaf .paper-shelf,.research-leaf .collaborative-shelf{border-left:1px solid #aaa;border-right:1px solid #aaa;padding-right:16px}
+.research-leaf .paper-shelf>.paper-card:last-child,.research-leaf .collaborative-shelf>.paper-card:last-child{border-left:0}
+
+/* Chinese vertical text sizes each chapter by its actual column count. */
+.about-leaf>.v-profile{flex:none;width:max-content}
+.v-profile>.v-affiliation{flex:none;height:100%;width:max-content}
+.about-leaf>.v-intro{flex:0 0 auto;height:100%;width:max-content;min-width:0}
+.history-leaf>.v-history,.experience-leaf>.v-history{flex:none;height:100%;width:max-content;min-width:0}
+
+/* Classic Windows UI face; Microsoft Sans Serif is the scalable fallback. */
+:root{--font-window:"MS Sans Serif","Microsoft Sans Serif",Tahoma,"PMingLiU","MingLiU",Arial,sans-serif;--text-window:13px}
+.titlebar{font-family:var(--font-window);font-size:var(--text-window);font-weight:700;font-style:normal;line-height:1.25;letter-spacing:normal}
+.window>nav a:link,.window>nav a:visited{font-family:var(--font-window);font-size:var(--text-window);font-weight:400;font-style:normal;line-height:1.3;letter-spacing:normal}
+
+/* Align the icon and vertical text by their shared column center, not a text baseline. */
+.vertical-reader .leaf>h2{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;font-weight:700}
+.vertical-reader .leaf>h2>.icon{display:block;flex:none;width:24px;height:24px;margin:0;vertical-align:baseline;letter-spacing:normal}
+.vertical-reader .leaf>h2>.heading-text{display:block;writing-mode:vertical-rl;text-orientation:mixed;line-height:1.5}
